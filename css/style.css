@@ -293,11 +293,8 @@ i{
 .hide-mb {display: block;}
 .show-mb {display:none;}
 
-@media only screen and  (max-width:480px){
-    .top-header .align-items-center, .top-header .justify-content-end {
-        justify-content: center !important;
-
-    }
+@media only screen and  (max-width:768px){
+   
     .featured .container .col-md-4{
         margin: 0 auto;
     }
@@ -350,19 +347,27 @@ i{
     .footer .col-md-3 h6{
         margin: 20px 0;
     }
-    
+    ul{
+        width: 50%;
+        height: 100%;
+        top: 0;
+        background: red;
+        color: black;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+    ul li{
+        display: block;
+    }
 
     .hide-mb {display: none;}
     .show-mb {display:block;}
     .banner {
         padding: 20px;
     }
+
 }
-@media only screen and (max-width:768px){
-    header{
-        
-    }
-} 
 
 
 .product{
@@ -373,7 +378,9 @@ i{
 }
 .product-detail h2{
     font-size: 20px;
-
+}
+.product-detail{
+    overflow: hidden;
 }
 .product-detail p, .product-detail i{
     font-size: 12px;
@@ -385,6 +392,31 @@ i{
     font-size: 10px;
     color: green;
     align-items: center;
+    margin-right: 1px;
+}
+.product .product-detail .sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-40deg);
+    margin-left: -40px;
+    margin-top: 30px;
+    background: rgb(22, 12, 12);
+    color:white;
+    padding: 5px 100px;
+
+}
+.product .product-detail .discount{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 75px;
+    width: 75px;
+    margin-right: 25px;
+    margin-top: 20px;
+    border-radius: 45px;
+    background: red;
+    color: white;
 }
 .product-detail .product-button{
     left: 0;
